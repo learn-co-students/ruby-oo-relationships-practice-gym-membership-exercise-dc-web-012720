@@ -4,6 +4,16 @@ require_relative '../config/environment.rb'
 
 # test code goes here
 
+vale = Lifter.new("valentin", 100)
+jonny = Lifter.new("jonny", 200)
+
+gold = Gym.new("Golds Gym")
+
+vale.signUp(gold, 40)
+jonny.signUp(gold, 40)
+
+Lifter.average
+
 binding.pry
 
 puts "Gains!"
